@@ -21,7 +21,9 @@ class MyApp extends App {
         <Container>
           <Layout>
             <Component {...pageProps} />
-            <Footer>This is important</Footer>
+            <Footer>
+              충청남도 홍성군 홍북읍 | 이아롬 | 사업자번호: 302-43-345112
+            </Footer>
           </Layout>
         </Container>
       </ApolloProvider>
