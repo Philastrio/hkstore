@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,8 +10,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>HKstore</title>
-          <meta name="author" content={'Hankang'} />
+          <meta name="author" content={"Hankang"} />
           <link
             href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.1/antd.min.css"
             rel="stylesheet"
