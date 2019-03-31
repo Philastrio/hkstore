@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Button as AntButton } from "antd";
 import Header from "../../component/Header";
 import Button from "../../component/Button";
+import CartButton from "../../component/CartButton";
 
 export default ({ data, toggleCart }) => (
   <>
@@ -10,7 +11,7 @@ export default ({ data, toggleCart }) => (
     </Head>
     <Header
       centerColumn={<h4>상품</h4>}
-      rightColumn={<Button href="/cart" text="장바구니" />}
+      rightColumn={<CartButton />}
       leftColumn={<Button href="/" text="홈" />}
     />
     <div className={"product"}>
