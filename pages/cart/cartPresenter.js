@@ -4,6 +4,8 @@ import Button from "../../component/Button";
 import { Button as AntButton } from "antd";
 import ProductCard from "../../component/ProductCard";
 
+const reducerFN = (price, product) => price + product.price;
+
 export default ({ data }) => (
   <>
     <Head>
@@ -37,7 +39,7 @@ export default ({ data }) => (
         ))}
     </div>
     <div style={{ padding: "0px 50px" }}>
-      <h3>총 합계: 0</h3>
+      <h3>총 합계: {data && data.cart && data.cart.reduce(reducerFN, 0)}원</h3>
       <AntButton>나가기</AntButton>
     </div>
   </>
