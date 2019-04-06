@@ -22,9 +22,5 @@
     "dev": "node server",
     "build": "next build",
     "start": "NODE_ENV=production node server"
-  },
-  "devDependencies": {
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
   }
 }
