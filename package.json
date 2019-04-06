@@ -6,7 +6,6 @@
   "repository": "https://github.com/philastrio/hkstore.git",
   "author": "philastrio <han_gang@naver.com>",
   "license": "MIT",
-  "homepage": "https://keen-jang-fc1e93.netlify.com",
   "dependencies": {
     "antd": "3.8.1",
     "apollo-boost": "^0.1.16",

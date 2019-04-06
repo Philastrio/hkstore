@@ -21,10 +21,20 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    if ("serviceWorker" in navigator) {
+    if ("serviceWorker" in navigator && "PushManager" in window) {
       navigator.serviceWorker
         .register("/sw.js")
-        .then(result => console.log("SW Registered: ", result))
+        .then(swReg => {
+          console.log("SW Registered: ", swReg);
+          Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+              swReg.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: 
+              })
+            }
+          });
+        })
         .catch(error => console.log("Can't register SW: ", error));
     }
   }
